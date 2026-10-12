@@ -1,0 +1,8 @@
+# Python packages for the NammaMart pipelines (installed into the Astro image).
+# Airflow and pendulum already come with the Astro Runtime image.
+# No pandas: the pipelines use Python's built-in csv module + DuckDB SQL.
+duckdb>=1.4          # local warehouse; 1.4+ needed for MERGE INTO (ELT incremental load)
+
+# Optional LLM providers for include/code/llm.py (only the one you select is used)
+anthropic
+openai

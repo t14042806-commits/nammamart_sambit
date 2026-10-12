@@ -1,0 +1,12 @@
+astro
+.git
+.env
+airflow_settings.yaml
+logs/
+.venv
+airflow.db
+airflow.cfg
+# NammaMart: never bake pipeline output (contains PII) into the Docker image
+include/output
+include/data_experiments
+__pycache__

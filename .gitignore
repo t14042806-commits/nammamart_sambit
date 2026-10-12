@@ -1,0 +1,22 @@
+# ── Astro / Airflow local files ──
+.git
+.env
+.DS_Store
+airflow_settings.yaml
+__pycache__/
+astro
+.venv
+.astro/standalone/
+airflow-webserver.pid
+webserver_config.py
+airflow.cfg
+airflow.db
+.astro/*.local.yml
+.astro/*.local.yaml
+
+# ── NammaMart outputs ──
+# Warehouse (raw_customers has UNMASKED email/phone), quarantine files (rejected rows
+# exactly as received, may include PII) and intermediate work files.
+include/output/
+# Broken copies of the data made for the Part F experiments
+include/data_experiments/
